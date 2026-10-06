@@ -19,7 +19,7 @@
             attribution: '© OpenStreetMap contributors'
         }).addTo(map);
 
-        fetch('data/webgis_1.geojson')
+        fetch('data/WebGis_1.geojson')
             .then(response => response.json())
             .then(data => {
                 var layer = L.geoJson(data, {
