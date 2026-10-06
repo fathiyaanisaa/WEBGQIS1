@@ -22,7 +22,7 @@
         fetch('data/webgis_1.geojson')
             .then(response => response.json())
             .then(data => {
-                var layer = L.geoJSON(data, {
+                var layer = L.geoJson(data, {
                     style: function(feature) {
                         var val = feature.properties.kepadatan;
                         var col = '#f7fcf5';
